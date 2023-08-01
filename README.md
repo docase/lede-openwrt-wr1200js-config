@@ -4,11 +4,13 @@ Lede 友华WR1200js编译配置
 # 配置固件大小(Flash大小)
 ## target/linux/ramips/dts/mt7621_youhua_wr1200js.dts
 ### 默认(16M)
+'''
 partition@50000 {
         compatible = "denx,uimage";
         label = "firmware";
         reg = <0x50000 0xfb0000>;
 };
+'''
 ### 32M
 0xfb0000 -> 0x1fb0000
 ### 64M
@@ -23,6 +25,7 @@ partition@50000 {
 16064k -> 65216k (或者略小)
 
 # 配置支持USB 2.0 U盘
+'''
 Kernel modules —> USB Support —> <*> kmod-usb-core.
 Kernel modules —> USB Support —> <*> kmod-usb-ohci.
 Kernel modules —> USB Support —> <*> kmod-usb-uhci.
@@ -47,5 +50,5 @@ Kernel modules —> Native Language Support —> <*> kmod-nls-iso8859-1
 Kernel modules —> Native Language Support —> <*> kmod-nls-utf8
 
 Base system —> <*>block-mount
-
+'''
 
