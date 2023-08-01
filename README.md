@@ -51,4 +51,5 @@ Kernel modules —> Native Language Support —> <*> kmod-nls-utf8
 
 Base system —> <*>block-mount
 ```
-
+# 配置支持wifi
+Wireless Drivers -> mt7603 mt76x2
